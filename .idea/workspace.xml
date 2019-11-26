@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ebfd4f-8015-459f-b2e7-741845231bd0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dasha/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dasha/DashaMapOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dasha/DashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dasha/DashaMapThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dasha/DashaMapTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dasha/DashaMapTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dasha/HashMapX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dasha/HashMapX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dasha/DashaMapOneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dasha/DashaMapOneTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/dasha/DashaMapOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dasha/DashaMapOneTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DashaMapOneTest.bucketSizeTest">
+  <component name="RunManager" selected="JUnit.DashaMapOneTest.isEmptyTest">
     <configuration name="DashaMapOneTest.bucketSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="interfaces-1" />
       <extension name="coverage">
@@ -105,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashaMapOneTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashaMapOneTest.isEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="interfaces-1" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="dasha" />
       <option name="MAIN_CLASS_NAME" value="dasha.DashaMapOneTest" />
-      <option name="METHOD_NAME" value="getTest" />
+      <option name="METHOD_NAME" value="isEmptyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DashaMapOneTest.isEmptyTest" />
         <item itemvalue="JUnit.DashaMapOneTest.bucketSizeTest" />
         <item itemvalue="JUnit.DashaMapOneTest.sizeTest" />
         <item itemvalue="JUnit.DashaMapOneTest.deleteTest" />
         <item itemvalue="JUnit.DashaMapOneTest.setTest" />
-        <item itemvalue="JUnit.DashaMapOneTest.getTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574719673426</updated>
       <workItem from="1574719674674" duration="708000" />
-      <workItem from="1574787331997" duration="13143000" />
+      <workItem from="1574787331997" duration="13753000" />
     </task>
     <servers />
   </component>

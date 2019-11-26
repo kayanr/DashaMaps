@@ -71,6 +71,9 @@ public class DashaMapOne implements HashMapX{
 
     @Override
     public boolean isEmpty() {
+        if(size() == 0){
+            return true;
+        }
         return false;
     }
 
@@ -84,9 +87,7 @@ public class DashaMapOne implements HashMapX{
                 size++;
             }
         }
-
         return size;
-
     }
 
     @Override

@@ -51,6 +51,12 @@ public class DashaMapOneTest {
 
     @Test
     public void isEmptyTest() {
+        dash.set("Valerie", 88);
+        dash.set("Dolio", -12);
+        dash.set("King", 50);
+
+        Assert.assertFalse(dash.isEmpty());
+
     }
 
     @Test
