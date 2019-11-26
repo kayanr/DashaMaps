@@ -38,15 +38,27 @@ public class DashaMapOne implements HashMapX{
     }
 
     @Override
-    public String delete(String key) {
+    public void delete(String key) {
+        String result = HashFunctionOne(key);
+        int index = convertChar(result);
 
-        return null;
+        Node current = dashaNode[index];
+
+        if (current.key.equals(key)) {
+            dashaNode[index] = current.next;
+        }
+        while (current.next != null) {
+            if (current.next.key.equals(key)) {
+                current.next = current.next.next;
+            }
+            current = current.next;
+        }
     }
 
     @Override
     public Integer get(String key) {
         String result = HashFunctionOne(key);
-        int index = convertChar(key);
+        int index = convertChar(result);
         Node current = dashaNode[index];
         while (current != null){
             if(current.key.equals(key)) {
@@ -64,11 +76,31 @@ public class DashaMapOne implements HashMapX{
 
     @Override
     public long size() {
-        return 0;
+        int size = 0;
+        for(int i = 0; i < dashaNode.length; i++){
+            Node newNew = dashaNode[i];
+            while(newNew != null){
+                newNew = newNew.next;
+                size++;
+            }
+        }
+
+        return size;
+
     }
 
     @Override
-    public boolean bucketSize(String key) {
-        return false;
+    public long bucketSize(String key) {
+        String result = HashFunctionOne(key);
+        int index = convertChar(result);
+        Node current = dashaNode[index];
+
+        int length = 0;
+        while(current != null){
+            length++;
+            current = current.next;
+        }
+
+        return length;
     }
 }

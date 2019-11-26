@@ -14,8 +14,7 @@ public class DashaMapTwo implements HashMapX{
     }
 
     @Override
-    public String delete(String key) {
-        return null;
+    public void delete(String key) {
     }
 
     @Override
@@ -34,7 +33,7 @@ public class DashaMapTwo implements HashMapX{
     }
 
     @Override
-    public boolean bucketSize(String key) {
-        return false;
+    public long bucketSize(String key) {
+        return 0;
     }
 }

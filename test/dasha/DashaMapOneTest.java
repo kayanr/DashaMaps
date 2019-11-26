@@ -15,16 +15,17 @@ public class DashaMapOneTest {
         dash.set("yup", 1);
         dash.set("cool", 2);
         dash.set("bye girl", 4);
+        dash.set("Ryan", 42);
+        dash.set("Kai", 13);
+        dash.set("Kendra", 3);
+        dash.set("Wes", 420);
+        dash.set("yoda", 16);
 
 
     }
 
     @Test
     public void setTest() {
-        dash.set("Ryan", 42);
-        dash.set("Kai", 13);
-        dash.set("Kendra", 3);
-        dash.set("Wes", 420);
         Assert.assertEquals(42 , dash.get("Ryan").intValue());
         Assert.assertEquals(13 , dash.get("Kai").intValue());
         Assert.assertEquals(3 , dash.get("Kendra").intValue());
@@ -35,6 +36,9 @@ public class DashaMapOneTest {
 
     @Test
     public void deleteTest() {
+        dash.delete("yup");
+
+
     }
 
     @Test
@@ -51,9 +55,11 @@ public class DashaMapOneTest {
 
     @Test
     public void sizeTest() {
+        Assert.assertEquals(8, dash.size());
     }
 
     @Test
     public void bucketSizeTest() {
+        Assert.assertEquals(2, dash.bucketSize("yup"));
     }
 }
