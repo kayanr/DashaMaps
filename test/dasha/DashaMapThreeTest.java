@@ -66,7 +66,7 @@ public class DashaMapThreeTest {
 
     @Test
     public void bucketSizeTest() {
-        Assert.assertEquals(3, dash.bucketSize("yup"));
+        Assert.assertEquals(2, dash.bucketSize("yup"));
     }
 
 

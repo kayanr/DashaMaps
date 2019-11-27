@@ -9,4 +9,22 @@ public class DashaMapThree extends DashaMap {
         }
         return null;
     }
+
+    @Override
+    public long bucketSize(String key) {
+        String result = HashFunction(key);
+        int index = convertChar(result);
+        Node current = dashaNode[index];
+
+        int length = 0;
+        while(current != null){
+            String check = current.key.substring(0,2).toLowerCase();
+            if(check.equals(result)) {
+                length++;
+            }
+            current = current.next;
+        }
+
+        return length;
+    }
 }
